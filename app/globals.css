@@ -1,26 +1,80 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.authformcontainer {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 50px 300px;
+  filter: drop-shadow(2px 2px 6px #000000);
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.authcontainer {
+  background: #4e4e9c;
+  background: linear-gradient(
+    90deg,
+    rgba(78, 78, 156, 1) 0%,
+    rgba(0, 212, 255, 1) 46%,
+    rgba(78, 78, 156, 1) 100%
+  );
+  position: relative;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.authform {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 150px 50px;
+}
+.authcontainer {
+  img:nth-of-type(1) {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    width: 150px;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  img:nth-of-type(2) {
+    position: absolute;
+    top:47%;
+    left:25%;
+    width: 100px;
+  }
+  img:nth-of-type(3) {
+    position: absolute;
+    top: 20px;
+    left: 30%;
+  }
+  img:nth-of-type(4) {
+    position: absolute;
+    bottom: 20%;
+    left: 40%;
+    rotate: 90deg;
+  }
+  img:nth-of-type(5) {
+    position: absolute;
+    bottom: 19%;
+    left: 39%;
+    width: 110px;
+  }
+  img:nth-of-type(6) {
+    position: absolute;
+    bottom: 40%;
+    left: 56%;
+    width: 300px;
+  }
+  img:nth-of-type(7) {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 100px;
+  }
+  img:nth-of-type(8) {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+  }
 }
